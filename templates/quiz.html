@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300vh;
+            width: 100%;
+            background-color: gray;
+            margin-left: 10%;
+            display: none;
+
+        }
+        *{
+            margin: 0px;
+
+        }
+    </style>
+    <script src="./jquery2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#a').click(function(){
+                $('div').slideDown(4000)
+            })
+        })
+
+        function a(){
+            ans1=document.quiz.q1.value
+            ans2=document.quiz.q2.value
+            ans3=document.quiz.q3.value
+            ans4=document.quiz.q4.value
+            ans5=document.quiz.q5.value
+                 score=0
+                 if(ans1==''){
+                     score+=1
+                 }
+                 if(ans2==''){
+                 score+=1
+                 }
+                 if(ans3==''){
+                     score+=1
+                 }
+                 if(ans4==''){
+                     score+=1
+                 }
+                 if(ans5==''){
+                     score+=1
+                 }
+                 alert("score is"+score)
+        }
+    </script>
+</head>
+<body>
+  <button id="a">click here to start quiz</button>
+  <div>
+      <form name="quiz">
+          <h1>Ques1.what is WHO</h1><br><br>
+          
+        
+      
+  </div>
+    
+</body>
+</html>
